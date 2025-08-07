@@ -2,9 +2,79 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Hola Mundo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web de PSOE Teror</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    /* Estilo del logo */
+    .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola mundo</h1>
+
+  <!-- Logo principal del PSOE Teror -->
+  <img src="img/logo-psoeteror.png" alt="Logo PSOE Teror" class="logo">
+
+  <!-- Título principal -->
+  <h1>Conecte con nosotros</h1>
+
+  <!-- Contenedor de imágenes con enlaces -->
+  <div class="grid">
+    <a href="https://whatsapp.com/channel/yourchannel" target="_blank">
+      <img src="img/botonwhatsappcanal.png" alt="Canal de WhatsApp">
+    </a>
+
+    <a href="https://wa.me/yournumber" target="_blank">
+      <img src="img/botonwhatsappdirecto.png" alt="WhatsApp Directo">
+    </a>
+
+    <a href="https://facebook.com/psoeteror" target="_blank">
+      <img src="img/botonfacebook.png" alt="Facebook PSOE Teror">
+    </a>
+
+    <a href="https://instagram.com/psoeteror" target="_blank">
+      <img src="img/botoninstagram.png" alt="Instagram PSOE Teror">
+    </a>
+  </div>
+
 </body>
 </html>
